@@ -1,7 +1,8 @@
 const http = require("http");
 const app = http.createServer((request, response) => {
   const _url = request.url;
-  const fullUrl = new URL("https://port-0-nodetest99-sop272gldlkw7t1.gksl2.cloudtype.app" + _url);
+  const fullUrl = new URL("https://port-0-nodetest99-sop272gldll516g.gksl2.cloudtype.app" + _url);
+                           
   const pathName = fullUrl.pathname;
   
 if (pathName === "/") {
@@ -12,5 +13,5 @@ if (pathName === "/") {
 
 app.listen(3000, () => {
   //포트번호 3000으로 서버 구동
-  console.log("서버 시작 주소: https://port-0-nodetest99-sop272gldlkw7t1.gksl2.cloudtype.app");
+  console.log("서버 시작 주소: https://port-0-nodetest99-sop272gldll516g.gksl2.cloudtype.app");
 });
